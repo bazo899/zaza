@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!--<link rel="stylesheet" type="text/css" href="style.css"> -->
+<!--<meta charset="UTF-8">-->
+<meta name=" viewport"  content="width=device-width,initial-scale=1.0">
+<title>bazo</title>
+
+
+</head>
+
+<script>
+function cal()
+{
+
+ var a=n1.value;
+ var b=n2.value;
+ var c=n3.value;
+ var d=n4.value;
+ var e=n5.value;
+ var f=n6.value;
+
+
+let sum=0,count=0;
+
+
+
+// boksa a 
+
+if(a=="A+" || a=="a+" || a=="+A" || a=="+a" )
+{ sum+=95;count++; }
+if(a=="A" || a=="a" )                  
+{ sum+=90;count++; }
+if(a=="A-" || a=="a-" || a=="-A" || a=="-a")
+{ sum+=85;count++; }
+if(a=="B+"|| a=="b+" || a=="+B"|| a=="+b")
+{ sum+=80;count++; }
+if(a=="B"|| a=="b")
+{ sum+=75;count++; }
+if(a=="B-" || a=="b-" || a=="-B"|| a=="-b")
+{ sum+=70;count++; }
+if(a=="C+"  || a=="c+" || a=="+C"  || a=="+c")
+{ sum+=65;count++; }
+if(a=="C"  || a=="c")
+{ sum+=60;count++; }
+if(a=="C-"  || a=="c-"  ||  a=="-C"  || a=="-c")
+{ sum+=55;count++; }
+if(a=="D"  || a=="d")
+{ sum+=50;count++; }
+
+//boksa b
+
+if(b=="A+" || b=="a+" || b=="+A" || b=="+a" )
+{ sum+=95;count++; }
+if(b=="A" || b=="a" )
+{ sum+=90;count++; }
+if(b=="A-" || b=="a-" || b=="-A" || b=="-a")
+{ sum+=85;count++; }
+if(b=="B+"|| b=="b+" || b=="+B"|| b=="+b")
+{ sum+=80;count++; }
+if(b=="B"|| b=="b")
+{ sum+=75;count++; }
+if(b=="B-" || b=="b-" || b=="-B"|| b=="-b")
+{ sum+=70;count++; }
+if(b=="C+"  || b=="c+" || b=="+C"  || b=="+c")
+{ sum+=65;count++; }
+if(b=="C"  || b=="c")
+{ sum+=60;count++; }
+if(b=="C-"  || b=="c-"  ||  b=="-C"  || b=="-c")
+{ sum+=55;count++; }
+if(a=="D"  || a=="d")
+{ sum+=50;count++; }
+
+
+
+let avg1=sum/count;
+
+
+document.getElementById('result').innerHTML="sum="+sum;//error
+//document.write("sum=", sum , " average=",avg1);
+
+}
+</script>
+
+<style>
+
+p.v1{
+border: 5px red  dotted;
+}
+
+
+</style>
+
+<body>
+
+<input type="text" style="text-transform:uppercase"  id="n1" required maxlength="2"><br><br>
+<input type="text" style="text-transform:uppercase"  id="n2" required maxlength="2" ><b><br><br>
+<input type="text" style="text-transform:uppercase"  id="n3" required maxlength="2" ><b><br><br>
+<input type="text" style="text-transform:uppercase"  id="n4" required maxlength="2" ><b><br><br>
+<input type="text" style="text-transform:uppercase"  id="n5" required maxlength="2" ><b><br><br>
+<input type="text" style="text-transform:uppercase"  id="n6" required maxlength="2" ><b><br><br>
+
+<input type="submit" onclick="cal()" >
+
+
+<p id="result" class="v1" ></p>
+<p class="v"> hhhhh </p>
+
+</body>
+
+</html>
